@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Stopwatch</title>
+		<script src="script.js">
+		</script>
+		<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+		 <link id="colors" rel='stylesheet' href='style1.css'/>
+		 <style>
+			*{
+				outline: none;
+				font-family: Alata;
+				text-align: center;
+			}
+			body{
+				background-color: var(--bg);
+     				background-image: linear-gradient(to bottom right, var(--bg1), var(--bg2));
+			}
+			#time{
+				margin-top: 10%;
+				color: var(--fg);
+				font-size: 136px;
+			}
+			#mainBtn{
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 4px 0 rgba(0, 0, 0, 0.19);
+				border: none;
+				background-color: var(--btn-bg);
+				opacity: 60%;
+				padding: 15px;
+				width: 25%;
+				font-size: 28px;
+				color: var(--btn-fg);
+				transition: 0.4s;
+			}
+			#change{
+				position: fixed;
+				left: 10px;
+				top: 10px;
+				border-radius: 70px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 4px 0 rgba(0, 0, 0, 0.19);
+				border: none;
+				background-color: var(--sec-bg);
+				opacity: 60%;
+				padding: 4px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 28px;
+				color: var(--btn-fg);
+				transition: 0.4s;
+			}
+			#git{
+				position: fixed;
+				right: 10px;
+				bottom: 10px;
+				border-radius: 70px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 4px 0 rgba(0, 0, 0, 0.19);
+				border: none;
+				background-color: #fafafa; 
+				opacity: 70%;
+				padding: 4px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 28px;
+				color: var(--btn-fg);
+				transition: 0.4s;
+			}
+			#mainBtn:hover, #change:hover, #git:hover{
+				opacity: 100%;
+			}
+		 </style>
+	</head>
+	<body>
+		<button id="change" onclick="changeColor()"><img src="settings.png" width=30 height=30 /></button>
+		<h1 id="time">0:00</h1>
+		<br>
+		<button id="mainBtn" onclick="start()">Start</button>
+		<a href="https://github.com/ParallaxWave/timer-online"><button id="git"><img src="git.png" width=30 height=30 /></button></a>
+	</body>
+</html>
